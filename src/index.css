@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  --color-brand-dark: #0B0C11;
+  --color-brand-card: #12131A;
+  --color-brand-elevated: #1A1B22;
+  --color-brand-gray: #404044;
+  --color-brand-muted: #71717A;
+  --color-brand-light-text: #B8B8C1;
+  --color-brand-purple-deep: #482D7F;
+  --color-brand-purple-mid: #6841B6;
+  --color-brand-purple-accent: #7B61FF;
+  --color-brand-offwhite: #F5F4F1;
+  --color-brand-light: #FAFAF8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #0B0C11;
+  color: #FFFFFF;
+}
+
+input, select, textarea {
+  color: #0B0C11 !important;
+  background-color: #FFFFFF !important;
+  -webkit-text-fill-color: #0B0C11 !important;
+  opacity: 1 !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #6B7280 !important;
+  -webkit-text-fill-color: #6B7280 !important;
+  opacity: 1 !important;
+}
+
+select option {
+  color: #0B0C11 !important;
+  background-color: #FFFFFF !important;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-display);
+}
+
+/* Scrollbar: subtle, not hidden — accessibility */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0C11;
+}
+::-webkit-scrollbar-thumb {
+  background: #482D7F;
+  border-radius: 3px;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid #7B61FF;
+  outline-offset: 2px;
+}
+
+/* Horizontal scroll snap for mobile cards */
+.snap-scroll {
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+.snap-item {
+  scroll-snap-align: start;
+}

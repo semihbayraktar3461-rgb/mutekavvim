@@ -1,0 +1,12 @@
+{
+  "title": "Mütekavvim",
+  "language": "tr",
+  "description": "Mütekavvim — Açık Hava Reklamcılığı, Matbaa, Promosyon Ürünleri ve Dijital Çözümler.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
